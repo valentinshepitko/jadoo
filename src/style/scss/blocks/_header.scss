@@ -1,0 +1,107 @@
+.header{
+
+  padding-top: 50px;
+  padding-bottom: 130px;
+  position: relative;
+
+  &__holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  &__logo-holder{
+    padding-right: 222px;
+  }
+
+  &__nav-holder{
+    padding-right: 80px;
+    padding-top: 5px;
+    z-index: 10;
+  }
+
+  &__nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+
+  &__nav-link{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #212832;
+    font-weight: 500;
+
+    &:hover{
+      color: #DF6951;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  &__login-holder{
+    z-index: 9;
+  }
+
+  &__login-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding-top: 5px;
+    z-index: 10;
+  }
+
+  &__login{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #212832;
+    font-weight: 500;
+
+    &:hover{
+      color: #DF6951;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  &__sign-up{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #212832;
+    font-weight: 500;
+    border: 1px solid #212832;
+    border-radius: 5px;
+    padding: 9px 21px;
+
+    &:hover{
+      background-color: #F1A501;
+      color: white;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  &__lang{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #212832;
+    font-weight: 600;
+  }
+
+  &__lang-list{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__lang-link{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #212832;
+    font-weight: 600;
+  }
+
+  &__decor{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

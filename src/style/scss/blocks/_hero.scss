@@ -1,0 +1,64 @@
+.hero{
+
+  position: relative;
+  padding-bottom: 200px;
+
+  &__pre-title{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #DF6951;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+  }
+
+  &__title{
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 89px;
+    max-width: 546px;
+    color: #181E4B;
+    letter-spacing: -3.5px;
+    padding-bottom: 30px;
+  }
+
+  &__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 477px;
+    color: #5E6282;
+  }
+
+  &__button-holder{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    gap: 15px;
+  }
+
+  &__find-more-holder{
+    padding-top: 30px;
+  }
+
+  &__find-more{
+    border-radius: 10px;
+    background-color: #F1A501;
+    color: white;
+    padding: 19px 26px;
+    box-shadow: 0 20px 35px rgba(241, 165, 1, 0.15);
+
+    &:hover{
+      background-color: #DF6951;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  &__image-holder{
+    position: absolute;
+    right: 117px;
+    top: -105px;
+  }
+}

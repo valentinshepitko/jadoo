@@ -1,0 +1,238 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1115px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-container {
+  max-width: 1165px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.header {
+  padding-top: 50px;
+  padding-bottom: 130px;
+  position: relative;
+}
+.header__holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.header__logo-holder {
+  padding-right: 222px;
+}
+.header__nav-holder {
+  padding-right: 80px;
+  padding-top: 5px;
+  z-index: 10;
+}
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+}
+.header__nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #212832;
+  font-weight: 500;
+}
+.header__nav-link:hover {
+  color: #DF6951;
+  transition: ease-in-out 0.2s;
+}
+.header__login-holder {
+  z-index: 9;
+}
+.header__login-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  padding-top: 5px;
+  z-index: 10;
+}
+.header__login {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #212832;
+  font-weight: 500;
+}
+.header__login:hover {
+  color: #DF6951;
+  transition: ease-in-out 0.2s;
+}
+.header__sign-up {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #212832;
+  font-weight: 500;
+  border: 1px solid #212832;
+  border-radius: 5px;
+  padding: 9px 21px;
+}
+.header__sign-up:hover {
+  background-color: #F1A501;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+.header__lang {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #212832;
+  font-weight: 600;
+}
+.header__lang-list {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__lang-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #212832;
+  font-weight: 600;
+}
+.header__decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 200px;
+}
+.hero__pre-title {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #DF6951;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+.hero__title {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 89px;
+  max-width: 546px;
+  color: #181E4B;
+  letter-spacing: -3.5px;
+  padding-bottom: 30px;
+}
+.hero__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+  max-width: 477px;
+  color: #5E6282;
+}
+.hero__button-holder {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  gap: 15px;
+}
+.hero__find-more-holder {
+  padding-top: 30px;
+}
+.hero__find-more {
+  border-radius: 10px;
+  background-color: #F1A501;
+  color: white;
+  padding: 19px 26px;
+  box-shadow: 0 20px 35px rgba(241, 165, 1, 0.15);
+}
+.hero__find-more:hover {
+  background-color: #DF6951;
+  transition: ease-in-out 0.2s;
+}
+.hero__image-holder {
+  position: absolute;
+  right: 117px;
+  top: -105px;
+}
+
+.services__title-holder {
+  text-align: center;
+}
+.services__pre-title {
+  color: #5E6282;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.services__title {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #14183E;
+  padding-bottom: 66px;
+}
+.services__icon-holder {
+  padding-bottom: 30px;
+}
+.services__column-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 38px;
+}
+.services__column {
+  max-width: 261px;
+}
+.services__column-icon {
+  padding-left: 46px;
+}
+.services__column-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.services__column-text {
+  max-width: 181px;
+  color: #5E6282;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

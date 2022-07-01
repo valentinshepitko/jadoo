@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  max-width: 1115px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-container{
+  max-width: 1165px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
