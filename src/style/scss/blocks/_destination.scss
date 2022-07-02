@@ -1,0 +1,82 @@
+.destination{
+
+  padding-bottom: 185px;
+
+  &__title-holder{
+    text-align: center;
+  }
+
+  &__pre-title{
+    color: $teal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+
+  &__title{
+    font-family: 'Volkhov', serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: $dark-blue;
+    padding-bottom: 66px;
+  }
+
+  &__column-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+
+  }
+
+  &__column{
+    max-width: 315px;
+    border-radius: 0 0 24px 24px;
+    box-shadow: -2px 40px 39px -17px rgb(0 0 0 / 5%);  }
+
+  &__image-holder{
+    padding-bottom: 27px;
+  }
+
+  &__holder{
+    border-radius: 24px;
+  }
+
+  &__content-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 27px;
+  }
+
+  &__city{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: $teal;
+    padding-left: 20px;
+  }
+
+  &__price{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: $teal;
+    padding-right: 25px;
+  }
+
+  &__days{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: $teal;
+    padding-left: 15px;
+    padding-bottom: 42px;
+  }
+
+  &__days-number{
+    padding-left: 14px;
+  }
+}
