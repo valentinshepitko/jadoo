@@ -37,6 +37,7 @@
     max-width: 261px;
 
     &_flight{
+      background-color: white;
       position: relative;
       border-radius: 36px;
       padding-left: 42px;
@@ -75,7 +76,8 @@
 
   &__decor2{
     position: absolute;
-    left: -60px;
+    left: -40px;
     bottom: -44px;
+    z-index: -1;
   }
 }

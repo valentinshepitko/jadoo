@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
-
+    position: relative;
   }
 
   &__column{
@@ -35,12 +35,11 @@
     border-radius: 0 0 24px 24px;
     box-shadow: -2px 40px 39px -17px rgb(0 0 0 / 5%);  }
 
-  &__image-holder{
-    padding-bottom: 27px;
-  }
-
   &__holder{
-    border-radius: 24px;
+    border-radius: 0 0 24px 24px;
+    padding-top: 40px;
+    margin-top: -15px;
+    background-color: white;
   }
 
   &__content-holder{
@@ -78,5 +77,12 @@
 
   &__days-number{
     padding-left: 14px;
+  }
+
+  &__decor{
+    position: absolute;
+    top: 335px;
+    right: 4px;
+    z-index: -1;
   }
 }
