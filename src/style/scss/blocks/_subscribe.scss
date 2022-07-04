@@ -1,0 +1,83 @@
+.subscribe{
+
+  padding-bottom: 166px;
+  position: relative;
+
+  &__holder{
+    background-color: rgba(223, 215, 249, 0.2);;
+    border-radius: 129px 20px 20px 20px;
+    position: relative;
+  }
+
+  &__title{
+    font-family: 'Poppins', sans-serif;
+    color: #5E6282;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 54px;
+    max-width: 859px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 79px;
+    padding-bottom: 75px;
+  }
+
+  &__input-holder{
+    text-align: center;
+  }
+
+  &__form{
+    padding-bottom: 78px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+  }
+
+  &__input{
+    max-width: 421px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px 277px 27px 60px;
+    border: none;
+    outline: none;
+    &:focus::-webkit-input-placeholder { color:transparent; }
+  }
+
+  &__input-icon{
+    position: absolute;
+    left: 260px;
+    top: 23px;
+  }
+
+  &__btn{
+    border-radius: 10px;
+    background-color: #FF946D;
+    color: white;
+    border: none;
+    padding: 23px 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #731e00;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  &__decor{
+    position: absolute;
+    top: 46px;
+    left: -90px;
+    z-index: -1;
+  }
+
+  &__decor2{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

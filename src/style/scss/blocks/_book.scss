@@ -27,7 +27,6 @@
   }
 
   &__step{
-
     position: relative;
     padding-bottom: 48px;
 
@@ -42,7 +41,6 @@
   }
 
   &__step2{
-
     position: relative;
     padding-bottom: 48px;
 
@@ -57,7 +55,6 @@
   }
 
   &__step3{
-
     position: relative;
     padding-bottom: 48px;
 
@@ -92,8 +89,9 @@
     box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     border-radius: 26px;
     padding: 20px 23px 32px 23px;
-    max-height: 410px;
+    max-height: 440px;
     margin-top: 70px;
+    position: relative;
   }
 
   &__trip-image-holder{
@@ -156,10 +154,21 @@
     color: $teal;
   }
 
+  &__trip-popup{
+    background-color: white;
+    max-width: 263px;
+    border-radius: 18px;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    position: absolute;
+    right: -121px;
+    bottom: 51px;
+  }
+
   &__ongoing-holder{
     display: flex;
     flex-wrap: wrap;
     gap: 11px;
+    padding: 16px 25px 24px 20px;
   }
 
   &__ongoing{
@@ -174,12 +183,20 @@
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
+  }
+
+  &__trip-complete{
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
   }
 
   &__trip-percent{
     font-weight: 500;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
+    color: #8A79DF;
   }
 }

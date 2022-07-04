@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Volkhov:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/css/main.css">
+    <script src="src/js/main.js"></script>
 </head>
 <body>
 <header class="header">
@@ -79,7 +80,6 @@
                    </div>
                </div>
            </div>
-           
            <div class="hero__image-holder">
                <img src="src/img/traveller.png" alt="" class="hero__image">
            </div>
@@ -138,7 +138,6 @@
             <div class="destination__pre-title"><span>Top Selling</span></div>
             <h2 class="destination__title">Top Destinations</h2>
         </div>
-
         <div class="destination__column-holder">
             <div class="destination__column">
                 <div class="destination__image-holder">
@@ -177,7 +176,6 @@
                     <div class="destination__days"><img src="src/img/destination.svg" alt=""><span class="destination__days-number">28 Days Trip</span></div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -208,7 +206,7 @@
             <div class="book__trip">
                 <div class="book__trip-column-content">
                     <div class="book__trip-image-holder">
-                        <img src="src/img/book-trip.png" alt="" class="book__trip-image">
+                        <div class="book__trip-image-holder"><img src="src/img/book-trip.png" alt="" class="book__trip-image"></div>
                     </div>
                     <div class="book__trip-title"><span>Trip To Greece</span></div>
                     <div class="book__trip-date-holder"><span class="book__trip-date">14-29 June</span><span class="book__trip-line"></span><span class="book__trip-author">by Robbin joseph</span></div>
@@ -223,20 +221,66 @@
                         <img src="src/img/trip-like.svg" alt="" class="book__icon-like">
                     </div>
                 </div>
-
                 <div class="book__trip-popup">
                     <div class="book__ongoing-holder">
                         <img src="src/img/trip-rome.svg" alt="" class="book__icon-ongoing">
                         <div class="book__ongoing-content">
                             <div class="book__ongoing"><span>Ongoing</span></div>
                             <div class="book__trip-to"><span>Trip to rome</span></div>
-                            <div class="book__trip-percent"><span>40%</span> completed</div>
+                            <div class="book__trip-complete"><span class="book__trip-percent">40%</span> completed</div>
                             <img src="src/img/trip-scale.svg" alt="" class="book__scale">
                         </div>
                     </div>
-
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<!--testimonials-->
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials__holder">
+            <div class="testimonials__title-holder">
+                <div class="testimonials__pre-title"><span>Testimonials</span></div>
+                <h2 class="testimonials__title">What people say About Us.</h2>
+            </div>
+            <div class="testimonials__column">
+                <div class="testimonials__content">
+                        <img src="src/img/testimonial-profile.png" alt="" class="testimonials__image">
+                        <div class="testimonials__text"><span>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</span></div>
+                        <div class="testimonials__profile"><span>Mike taylor</span></div>
+                        <div class="testimonials__location"><span>Lahore, Pakistan</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--partners-->
+<section class="partners">
+    <div class="container">
+        <div class="partners__holder">
+            <div class="partners__logo-holder"><img src="src/img/logo1.svg" alt="" class="partners__logo"></div>
+            <div class="partners__logo-holder"><img src="src/img/logo2.svg" alt="" class="partners__logo"></div>
+            <div class="partners__logo-holder"><img src="src/img/logo3.svg" alt="" class="partners__logo"></div>
+            <div class="partners__logo-holder"><img src="src/img/logo4.svg" alt="" class="partners__logo"></div>
+            <div class="partners__logo-holder"><img src="src/img/logo5.svg" alt="" class="partners__logo"></div>
+        </div>
+    </div>
+</section>
+<!--subscribe-->
+<section class="subscribe">
+    <div class="container">
+        <div class="subscribe__holder">
+            <h2 class="subscribe__title">Subscribe to get information, latest news and other interesting offers about Jadoo</h2>
+                <form action="" class="subscribe__form">
+                    <img src="src/img/subscribe-mail.svg" alt="" class="subscribe__input-icon">
+                    <label>
+                        <input type="email" class="subscribe__input" placeholder="Your email">
+                    </label>
+                    <button class="subscribe__btn">Subscribe</button>
+                </form>
+            <img src="src/img/subscribe-decor.svg" alt="" class="subscribe__decor">
+            <img src="src/img/subscribe-decor2.svg" alt="" class="subscribe__decor2">
         </div>
     </div>
 </section>
