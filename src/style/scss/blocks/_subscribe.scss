@@ -49,6 +49,12 @@
     position: absolute;
     left: 260px;
     top: 23px;
+
+    @include breakpoint('xl'){
+      position: absolute;
+      left: 215px;
+      top: 23px;
+    }
   }
 
   &__btn{

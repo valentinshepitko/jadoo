@@ -8,22 +8,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+
+    @include breakpoint('xl'){
+      justify-content: space-between;
+    }
   }
 
   &__logo-holder{
     padding-right: 222px;
+
+    @include breakpoint('xl'){
+      padding-right: 30px;
+      padding-left: 20px;
+    }
   }
 
   &__nav-holder{
     padding-right: 80px;
     padding-top: 5px;
     z-index: 10;
+
+    @include breakpoint('xl'){
+      padding-right: 35px;
+    }
   }
 
   &__nav-list{
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
+
+    @include breakpoint('xl'){
+      gap: 30px;
+    }
   }
 
   &__nav-link{
@@ -48,6 +65,10 @@
     gap: 45px;
     padding-top: 5px;
     z-index: 10;
+
+    @include breakpoint('xl'){
+      padding-right: 30px;
+    }
   }
 
   &__login{

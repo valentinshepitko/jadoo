@@ -53,18 +53,39 @@ img {
   flex-wrap: wrap;
   justify-content: end;
 }
+@media (max-width: 1200px) {
+  .header__holder {
+    justify-content: space-between;
+  }
+}
 .header__logo-holder {
   padding-right: 222px;
+}
+@media (max-width: 1200px) {
+  .header__logo-holder {
+    padding-right: 30px;
+    padding-left: 20px;
+  }
 }
 .header__nav-holder {
   padding-right: 80px;
   padding-top: 5px;
   z-index: 10;
 }
+@media (max-width: 1200px) {
+  .header__nav-holder {
+    padding-right: 35px;
+  }
+}
 .header__nav-list {
   display: flex;
   flex-wrap: wrap;
   gap: 55px;
+}
+@media (max-width: 1200px) {
+  .header__nav-list {
+    gap: 30px;
+  }
 }
 .header__nav-link {
   font-family: "Open Sans", sans-serif;
@@ -85,6 +106,11 @@ img {
   gap: 45px;
   padding-top: 5px;
   z-index: 10;
+}
+@media (max-width: 1200px) {
+  .header__login-list {
+    padding-right: 30px;
+  }
 }
 .header__login {
   font-family: "Open Sans", sans-serif;
@@ -138,6 +164,11 @@ img {
   position: relative;
   padding-bottom: 200px;
 }
+@media (max-width: 1200px) {
+  .hero__content-holder {
+    padding-left: 20px;
+  }
+}
 .hero__pre-title {
   font-weight: 700;
   font-size: 20px;
@@ -155,6 +186,7 @@ img {
   color: #181E4B;
   letter-spacing: -3.5px;
   padding-bottom: 30px;
+  position: relative;
 }
 .hero__text {
   font-weight: 500;
@@ -189,6 +221,18 @@ img {
   right: 117px;
   top: -105px;
 }
+@media (max-width: 1200px) {
+  .hero__image-holder {
+    position: absolute;
+    right: -20px;
+    top: -100px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero__image {
+    max-width: 610px;
+  }
+}
 
 .services {
   padding-bottom: 155px;
@@ -217,7 +261,13 @@ img {
 .services__column-holder {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 80px;
+}
+@media (max-width: 1200px) {
+  .services__column-holder {
+    justify-content: center;
+  }
 }
 .services__column {
   max-width: 261px;
@@ -337,6 +387,11 @@ img {
   right: 4px;
   z-index: -1;
 }
+@media (max-width: 1200px) {
+  .destination__decor {
+    display: none;
+  }
+}
 
 .book {
   padding-bottom: 200px;
@@ -345,6 +400,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 117px;
+}
+@media (max-width: 1200px) {
+  .book__holder {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 .book__pre-title {
   color: #5E6282;
@@ -518,6 +579,17 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 1200px) {
+  .testimonials__holder {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  .testimonials__title-holder {
+    padding-bottom: 60px;
+  }
+}
 .testimonials__pre-title {
   color: #5E6282;
   font-family: "Poppins", sans-serif;
@@ -629,6 +701,13 @@ img {
   left: 260px;
   top: 23px;
 }
+@media (max-width: 1200px) {
+  .subscribe__input-icon {
+    position: absolute;
+    left: 215px;
+    top: 23px;
+  }
+}
 .subscribe__btn {
   border-radius: 10px;
   background-color: #FF946D;
@@ -654,5 +733,70 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.footer {
+  position: relative;
+}
+.footer__holder {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding-bottom: 86px;
+}
+@media (max-width: 1200px) {
+  .footer__holder {
+    padding-left: 20px;
+  }
+}
+.footer__logo-holder {
+  padding-bottom: 20px;
+  color: #14183E;
+}
+.footer__text {
+  max-width: 207px;
+  color: #5E6282;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  line-height: 124.5%;
+}
+.footer__main-link-holder {
+  padding-bottom: 34px;
+}
+.footer__main-link {
+  color: #080809;
+  font-size: 21px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 34px;
+}
+.footer__link-item {
+  padding-bottom: 12px;
+}
+.footer__link {
+  color: #5E6282;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.footer__social-holder {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+}
+.footer__app-title {
+  padding-bottom: 16px;
+  color: #5E6282;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer__app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.footer__copyright {
+  text-align: center;
+  padding-bottom: 80px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,13 @@
   position: relative;
   padding-bottom: 200px;
 
+  &__content-holder{
+
+    @include breakpoint('xl'){
+      padding-left: 20px;
+    }
+  }
+
   &__pre-title{
     font-weight: 700;
     font-size: 20px;
@@ -21,6 +28,7 @@
     color: #181E4B;
     letter-spacing: -3.5px;
     padding-bottom: 30px;
+    position: relative;
   }
 
   &__text{
@@ -60,5 +68,17 @@
     position: absolute;
     right: 117px;
     top: -105px;
+
+    @include breakpoint('xl'){
+      position: absolute;
+      right: -20px;
+      top: -100px;
+    }
+  }
+
+  &__image{
+    @include breakpoint('xl'){
+      max-width: 610px;
+    }
   }
 }

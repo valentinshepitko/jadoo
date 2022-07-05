@@ -1,0 +1,74 @@
+.footer{
+
+  position: relative;
+
+  &__holder{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding-bottom: 86px;
+
+    @include breakpoint('xl'){
+      padding-left: 20px;
+    }
+  }
+
+  &__logo-holder{
+    padding-bottom: 20px;
+    color: $dark-blue;
+  }
+
+  &__text{
+    max-width: 207px;
+    color: $teal;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 124.5%;
+  }
+
+  &__main-link-holder{
+    padding-bottom: 34px;
+  }
+
+  &__main-link{
+    color: #080809;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding-bottom: 34px;
+  }
+
+  &__link-item{
+    padding-bottom: 12px;
+  }
+  &__link{
+    color: $teal;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  &__social-holder{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+  }
+
+  &__app-title{
+    padding-bottom: 16px;
+    color: $teal;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__app{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
+  &__copyright{
+  text-align: center;
+    padding-bottom: 80px;
+  }
+}

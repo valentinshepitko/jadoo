@@ -30,7 +30,12 @@
   &__column-holder{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
+
+    @include breakpoint('xl'){
+      justify-content: center;
+    }
   }
 
   &__column{
