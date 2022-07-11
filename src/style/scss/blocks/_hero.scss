@@ -5,6 +5,11 @@
 
   &__content-holder{
 
+    @include breakpoint('md'){
+      display: grid;
+      justify-content: center;
+    }
+
     @include breakpoint('xl'){
       padding-left: 20px;
     }
@@ -69,10 +74,14 @@
     right: 117px;
     top: -105px;
 
+    @include breakpoint('md'){
+      display: none;
+    }
+
     @include breakpoint('xl'){
       position: absolute;
-      right: -20px;
       top: -100px;
+      right: 0;
     }
   }
 

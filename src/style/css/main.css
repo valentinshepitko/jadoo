@@ -164,6 +164,12 @@ img {
   position: relative;
   padding-bottom: 200px;
 }
+@media (max-width: 768px) {
+  .hero__content-holder {
+    display: grid;
+    justify-content: center;
+  }
+}
 @media (max-width: 1200px) {
   .hero__content-holder {
     padding-left: 20px;
@@ -221,11 +227,16 @@ img {
   right: 117px;
   top: -105px;
 }
+@media (max-width: 768px) {
+  .hero__image-holder {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .hero__image-holder {
     position: absolute;
-    right: -20px;
     top: -100px;
+    right: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -303,6 +314,12 @@ img {
   position: absolute;
   right: 46px;
   top: -6px;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .services__decor {
+    display: none;
+  }
 }
 .services__decor2 {
   position: absolute;

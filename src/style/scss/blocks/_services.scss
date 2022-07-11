@@ -77,6 +77,11 @@
     position: absolute;
     right: 46px;
     top: -6px;
+    z-index: -1;
+
+    @include breakpoint('md'){
+      display: none;
+    }
   }
 
   &__decor2{
