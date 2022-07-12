@@ -87,6 +87,10 @@
       display: none;
     }
 
+    @include breakpoint('lg'){
+      display: none;
+    }
+
     @include breakpoint('xl'){
       position: absolute;
       top: -100px;
@@ -95,6 +99,7 @@
   }
 
   &__image{
+
     @include breakpoint('xl'){
       max-width: 610px;
     }

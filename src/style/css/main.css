@@ -248,6 +248,11 @@ img {
     display: none;
   }
 }
+@media (max-width: 1024px) {
+  .hero__image-holder {
+    display: none;
+  }
+}
 @media (max-width: 1200px) {
   .hero__image-holder {
     position: absolute;
