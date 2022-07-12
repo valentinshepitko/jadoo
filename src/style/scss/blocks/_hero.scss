@@ -3,6 +3,10 @@
   position: relative;
   padding-bottom: 200px;
 
+  @include breakpoint('xs'){
+    padding-bottom: 130px;
+  }
+
   &__content-holder{
 
     @include breakpoint('md'){

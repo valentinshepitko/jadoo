@@ -6,6 +6,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include breakpoint('xs'){
+      justify-content: center;
+    }
+
     @include breakpoint('xl'){
       width: 50%;
       margin: 0 auto;
@@ -13,6 +17,11 @@
   }
 
   &__title-holder{
+
+      @include breakpoint('xs'){
+        max-width: 320px;
+        width: 300px;
+      }
 
     @include breakpoint('xl'){
       padding-bottom: 60px;
@@ -34,6 +43,11 @@
     color: $dark-blue;
     padding-bottom: 66px;
     max-width: 511px;
+
+    @include breakpoint('xs'){
+      max-width: 320px;
+      width: 300px;
+    }
 
     @include breakpoint('xs'){
       font-size: 30px;
