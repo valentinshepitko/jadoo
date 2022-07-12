@@ -88,10 +88,7 @@
     z-index: -1;
 
     @include breakpoint('xs'){
-      position: absolute;
-      top: 46px;
-      left: 0;
-      z-index: -1;
+      display: none;
     }
   }
 
@@ -99,5 +96,9 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    @include breakpoint('xs'){
+      display: none;
+    }
   }
 }

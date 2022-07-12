@@ -874,16 +874,18 @@ img {
 }
 @media (max-width: 568px) {
   .subscribe__decor {
-    position: absolute;
-    top: 46px;
-    left: 0;
-    z-index: -1;
+    display: none;
   }
 }
 .subscribe__decor2 {
   position: absolute;
   right: 0;
   top: 0;
+}
+@media (max-width: 568px) {
+  .subscribe__decor2 {
+    display: none;
+  }
 }
 
 .footer {
