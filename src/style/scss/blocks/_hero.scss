@@ -22,6 +22,10 @@
     color: #DF6951;
     text-transform: uppercase;
     padding-bottom: 24px;
+
+    @include breakpoint('xs'){
+      font-size: 16px;
+    }
   }
 
   &__title{
@@ -34,6 +38,11 @@
     letter-spacing: -3.5px;
     padding-bottom: 30px;
     position: relative;
+
+    @include breakpoint('xs'){
+      font-size: 54px;
+      line-height: 69px;
+    }
   }
 
   &__text{

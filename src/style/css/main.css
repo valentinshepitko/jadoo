@@ -159,6 +159,11 @@ img {
   right: 0;
   top: 0;
 }
+@media (max-width: 568px) {
+  .header__decor {
+    max-width: 230px;
+  }
+}
 
 .hero {
   position: relative;
@@ -183,6 +188,11 @@ img {
   text-transform: uppercase;
   padding-bottom: 24px;
 }
+@media (max-width: 568px) {
+  .hero__pre-title {
+    font-size: 16px;
+  }
+}
 .hero__title {
   font-family: "Volkhov", serif;
   font-weight: 700;
@@ -193,6 +203,12 @@ img {
   letter-spacing: -3.5px;
   padding-bottom: 30px;
   position: relative;
+}
+@media (max-width: 568px) {
+  .hero__title {
+    font-size: 54px;
+    line-height: 69px;
+  }
 }
 .hero__text {
   font-weight: 500;
@@ -265,6 +281,11 @@ img {
   font-size: 50px;
   color: #14183E;
   padding-bottom: 66px;
+}
+@media (max-width: 568px) {
+  .services__title {
+    font-size: 30px;
+  }
 }
 .services__icon-holder {
   padding-bottom: 30px;
@@ -348,6 +369,11 @@ img {
   color: #14183E;
   padding-bottom: 66px;
 }
+@media (max-width: 568px) {
+  .destination__title {
+    font-size: 30px;
+  }
+}
 .destination__column-holder {
   display: flex;
   flex-wrap: wrap;
@@ -413,10 +439,21 @@ img {
 .book {
   padding-bottom: 200px;
 }
+@media (max-width: 568px) {
+  .book {
+    padding-bottom: 285px;
+  }
+}
 .book__holder {
   display: flex;
   flex-wrap: wrap;
   gap: 117px;
+}
+@media (max-width: 568px) {
+  .book__holder {
+    gap: 0;
+    justify-content: center;
+  }
 }
 @media (max-width: 1200px) {
   .book__holder {
@@ -438,6 +475,11 @@ img {
   color: #14183E;
   padding-bottom: 66px;
   max-width: 511px;
+}
+@media (max-width: 568px) {
+  .book__title {
+    font-size: 30px;
+  }
 }
 .book__step {
   position: relative;
@@ -483,11 +525,21 @@ img {
   padding-bottom: 5px;
   padding-left: 70px;
 }
+@media (max-width: 1200px) {
+  .book__step-title {
+    font-size: 14px;
+  }
+}
 .book__step-text {
   color: #5E6282;
   font-family: "Poppins", sans-serif;
   max-width: 400px;
   padding-left: 70px;
+}
+@media (max-width: 1200px) {
+  .book__step-text {
+    font-size: 13px;
+  }
 }
 .book__trip {
   max-width: 370px;
@@ -497,6 +549,11 @@ img {
   max-height: 440px;
   margin-top: 70px;
   position: relative;
+}
+@media (max-width: 568px) {
+  .book__trip {
+    margin-top: 0;
+  }
 }
 .book__trip-image-holder {
   padding-bottom: 26px;
@@ -520,6 +577,11 @@ img {
 .book__trip-content {
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 568px) {
+  .book__trip-content {
+    justify-content: center;
+  }
 }
 .book__trip-date {
   font-family: "Poppins", sans-serif;
@@ -548,6 +610,11 @@ img {
   font-weight: 500;
   color: #5E6282;
 }
+@media (max-width: 568px) {
+  .book__like {
+    padding-right: 100px;
+  }
+}
 .book__trip-popup {
   background-color: white;
   max-width: 263px;
@@ -556,6 +623,13 @@ img {
   position: absolute;
   right: -121px;
   bottom: 51px;
+}
+@media (max-width: 568px) {
+  .book__trip-popup {
+    position: absolute;
+    bottom: -165px;
+    right: auto;
+  }
 }
 .book__ongoing-holder {
   display: flex;
@@ -622,6 +696,11 @@ img {
   padding-bottom: 66px;
   max-width: 511px;
 }
+@media (max-width: 568px) {
+  .testimonials__title {
+    font-size: 30px;
+  }
+}
 .testimonials__column {
   max-width: 504px;
   background: #FFFFFF;
@@ -632,10 +711,23 @@ img {
 .testimonials__content {
   padding: 28px 68px 34px 34px;
 }
+@media (max-width: 568px) {
+  .testimonials__content {
+    padding: 5px 10px 5px 10px;
+    position: relative;
+  }
+}
 .testimonials__image {
   position: absolute;
   left: -44px;
   top: -48px;
+}
+@media (max-width: 568px) {
+  .testimonials__image {
+    position: absolute;
+    left: -70px;
+    top: -70px;
+  }
 }
 .testimonials__text {
   font-family: "Poppins", sans-serif;
@@ -645,6 +737,12 @@ img {
   color: #5E6282;
   padding-bottom: 34px;
   max-width: 402px;
+}
+@media (max-width: 568px) {
+  .testimonials__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 .testimonials__profile {
   font-family: "Poppins", sans-serif;
@@ -668,6 +766,14 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1024px) {
+  .partners__holder {
+    width: 30%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .subscribe {
@@ -698,9 +804,15 @@ img {
   padding-bottom: 78px;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
   position: relative;
+}
+@media (max-width: 568px) {
+  .subscribe__form {
+    gap: 10px;
+  }
 }
 .subscribe__input {
   max-width: 421px;
@@ -713,6 +825,11 @@ img {
 .subscribe__input:focus::-webkit-input-placeholder {
   color: transparent;
 }
+@media (max-width: 568px) {
+  .subscribe__input {
+    padding: 25px 100px 27px 60px;
+  }
+}
 .subscribe__input-icon {
   position: absolute;
   left: 260px;
@@ -720,9 +837,7 @@ img {
 }
 @media (max-width: 1200px) {
   .subscribe__input-icon {
-    position: absolute;
-    left: 215px;
-    top: 23px;
+    display: none;
   }
 }
 .subscribe__btn {
@@ -760,9 +875,23 @@ img {
   grid-template-columns: auto auto auto auto auto;
   padding-bottom: 86px;
 }
+@media (max-width: 768px) {
+  .footer__holder {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    width: 100%;
+  }
+}
 @media (max-width: 1200px) {
   .footer__holder {
     padding-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__logo-column {
+    width: 100%;
   }
 }
 .footer__logo-holder {

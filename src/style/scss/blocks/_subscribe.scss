@@ -30,9 +30,14 @@
     padding-bottom: 78px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
     position: relative;
+
+    @include breakpoint('xs'){
+     gap: 10px;
+    }
   }
 
   &__input{
@@ -43,6 +48,10 @@
     border: none;
     outline: none;
     &:focus::-webkit-input-placeholder { color:transparent; }
+
+    @include breakpoint('xs'){
+      padding: 25px 100px 27px 60px;
+    }
   }
 
   &__input-icon{
@@ -51,9 +60,7 @@
     top: 23px;
 
     @include breakpoint('xl'){
-      position: absolute;
-      left: 215px;
-      top: 23px;
+     display: none;
     }
   }
 

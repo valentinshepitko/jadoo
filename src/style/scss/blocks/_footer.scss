@@ -7,8 +7,22 @@
     grid-template-columns: auto auto auto auto auto;
     padding-bottom: 86px;
 
+    @include breakpoint('md'){
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+      justify-content: center;
+      width: 100%;
+    }
+
     @include breakpoint('xl'){
       padding-left: 20px;
+    }
+  }
+
+  &__logo-column{
+    @include breakpoint('md'){
+      width: 100%;
     }
   }
 

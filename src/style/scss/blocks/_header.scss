@@ -124,5 +124,9 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    @include breakpoint('xs'){
+      max-width: 230px;
+    }
   }
 }

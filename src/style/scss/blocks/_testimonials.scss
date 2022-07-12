@@ -34,6 +34,10 @@
     color: $dark-blue;
     padding-bottom: 66px;
     max-width: 511px;
+
+    @include breakpoint('xs'){
+      font-size: 30px;
+    }
   }
 
   &__column{
@@ -46,12 +50,23 @@
 
   &__content{
     padding: 28px 68px 34px 34px;
+
+    @include breakpoint('xs'){
+      padding: 5px 10px 5px 10px;
+      position: relative;
+    }
   }
 
   &__image{
     position: absolute;
     left: -44px;
     top: -48px;
+
+    @include breakpoint('xs'){
+      position: absolute;
+      left: -70px;
+      top: -70px;
+    }
   }
 
   &__text{
@@ -62,6 +77,11 @@
     color: $teal;
     padding-bottom: 34px;
     max-width: 402px;
+
+    @include breakpoint('xs'){
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
 
   &__profile{

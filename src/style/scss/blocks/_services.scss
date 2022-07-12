@@ -21,6 +21,10 @@
     font-size: 50px;
     color: $dark-blue;
     padding-bottom: 66px;
+
+    @include breakpoint('xs'){
+      font-size: 30px;
+    }
   }
 
   &__icon-holder{

@@ -2,10 +2,19 @@
 
   padding-bottom: 200px;
 
+  @include breakpoint('xs'){
+    padding-bottom: 285px;
+  }
+
   &__holder{
     display: flex;
     flex-wrap: wrap;
     gap: 117px;
+
+    @include breakpoint('xs'){
+      gap: 0;
+      justify-content: center;
+    }
 
     @include breakpoint('xl'){
       width: 50%;
@@ -28,6 +37,10 @@
     color: $dark-blue;
     padding-bottom: 66px;
     max-width: 511px;
+
+    @include breakpoint('xs'){
+     font-size: 30px;
+    }
   }
 
   &__step{
@@ -79,6 +92,10 @@
     color: $teal;
     padding-bottom: 5px;
     padding-left: 70px;
+
+    @include breakpoint('xl'){
+      font-size: 14px;
+    }
   }
 
   &__step-text{
@@ -86,6 +103,10 @@
     font-family: 'Poppins', sans-serif;
     max-width: 400px;
     padding-left: 70px;
+
+    @include breakpoint('xl'){
+     font-size: 13px;
+    }
   }
 
   &__trip{
@@ -96,6 +117,10 @@
     max-height: 440px;
     margin-top: 70px;
     position: relative;
+
+    @include breakpoint('xs'){
+      margin-top: 0;
+    }
   }
 
   &__trip-image-holder{
@@ -124,6 +149,10 @@
   &__trip-content{
     display: flex;
     flex-wrap: wrap;
+
+    @include breakpoint('xs'){
+     justify-content: center;
+    }
   }
 
   &__trip-date{
@@ -156,6 +185,10 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: $teal;
+
+    @include breakpoint('xs'){
+      padding-right: 100px;
+    }
   }
 
   &__trip-popup{
@@ -166,6 +199,12 @@
     position: absolute;
     right: -121px;
     bottom: 51px;
+
+    @include breakpoint('xs'){
+      position: absolute;
+      bottom: -165px;
+      right: auto;
+    }
   }
 
   &__ongoing-holder{
