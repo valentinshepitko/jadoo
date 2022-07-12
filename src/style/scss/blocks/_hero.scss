@@ -59,6 +59,10 @@
     flex-wrap: wrap;
     padding-top: 12px;
     gap: 15px;
+
+    @include breakpoint('xs'){
+      justify-content: center;
+    }
   }
 
   &__find-more-holder{

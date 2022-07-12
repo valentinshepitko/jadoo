@@ -120,6 +120,7 @@
 
     @include breakpoint('xs'){
       margin-top: 0;
+      max-width: 350px;
     }
   }
 
