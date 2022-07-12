@@ -17,9 +17,16 @@
   &__logo-holder{
     padding-right: 222px;
 
+    @include breakpoint('lg') {
+      padding-right: 30px;
+      padding-left: 20px;
+      z-index: 1;
+    }
+
     @include breakpoint('xl'){
       padding-right: 30px;
       padding-left: 20px;
+      z-index: 1;
     }
   }
 

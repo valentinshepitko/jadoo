@@ -22,6 +22,14 @@
     }
   }
 
+  &__title-holder{
+
+    @include breakpoint('xs'){
+      max-width: 320px;
+      width: 300px;
+    }
+  }
+
   &__pre-title{
     color: $teal;
     font-family: 'Poppins', sans-serif;
