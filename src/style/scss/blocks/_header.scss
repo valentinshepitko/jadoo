@@ -8,7 +8,6 @@
   padding-top: 50px;
   padding-bottom: 130px;
 
-
   &.active {
 
     .header__nav {
@@ -25,7 +24,7 @@
       &::before {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -72%) rotate(45deg);
+        transform: translate(-50%, -90%) rotate(45deg);
       }
 
       &::after {
@@ -36,20 +35,6 @@
     }
   }
 
-  &__holder{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    @include breakpoint('md') {
-      padding-bottom: 85px;
-    }
-
-    @include breakpoint('xl'){
-      justify-content: space-between;
-    }
-  }
 
   &__logo-holder{
     padding-left: 20px;
@@ -67,20 +52,12 @@
     }
   }
 
-  &__nav-holder{
+  &__nav-holder {
     padding-top: 5px;
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
-    @include breakpoint('md') {
-      flex-direction: column;
-    }
-
-    @include breakpoint('xl'){
-      padding-right: 35px;
-    }
   }
 
   &__nav{
@@ -93,7 +70,7 @@
       right: 0;
       margin: 0;
       width: 100%;
-      z-index: 2;
+      z-index: 1;
       background-color: white;
       transform: translateX(100%);
       transition: all ease-in-out 0.3s;
@@ -101,6 +78,7 @@
       visibility: hidden;
       height: 100vh;
       padding-top: 57px;
+      overflow: hidden;
     }
   }
 
