@@ -1,13 +1,50 @@
 .header{
 
+  top: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  background-color: white;
   padding-top: 50px;
   padding-bottom: 130px;
-  position: relative;
+
+
+  &.active {
+
+    .header__nav {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .header__burger {
+      span {
+        display: none;
+      }
+
+      &::before {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -72%) rotate(45deg);
+      }
+
+      &::after {
+        bottom: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
 
   &__holder{
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: space-between;
+
+    @include breakpoint('md') {
+      padding-bottom: 85px;
+    }
 
     @include breakpoint('xl'){
       justify-content: space-between;
@@ -15,7 +52,7 @@
   }
 
   &__logo-holder{
-    padding-right: 222px;
+    padding-left: 20px;
 
     @include breakpoint('lg') {
       padding-right: 30px;
@@ -31,12 +68,39 @@
   }
 
   &__nav-holder{
-    padding-right: 80px;
     padding-top: 5px;
-    z-index: 10;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include breakpoint('md') {
+      flex-direction: column;
+    }
 
     @include breakpoint('xl'){
       padding-right: 35px;
+    }
+  }
+
+  &__nav{
+
+    @include breakpoint('lg') {
+      flex-direction: column;
+      padding-bottom: 50px;
+      position:absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      width: 100%;
+      z-index: 2;
+      background-color: white;
+      transform: translateX(100%);
+      transition: all ease-in-out 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      height: 100vh;
+      padding-top: 57px;
     }
   }
 
@@ -44,6 +108,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
+
+    @include breakpoint('lg') {
+      flex-direction: column;
+      text-align: center;
+    }
 
     @include breakpoint('xl'){
       gap: 30px;
@@ -64,14 +133,32 @@
 
   &__login-holder{
     z-index: 10;
+    padding-left: 100px;
+
+    @include breakpoint('md') {
+      padding: 0;
+    }
   }
 
   &__login-list{
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
-    padding-top: 5px;
     z-index: 10;
+
+    @include breakpoint('lg') {
+      position:absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      width: 100%;
+      z-index: 2;
+      background-color: white;
+      transform: translateX(100%);
+      transition: all ease-in-out 0.3s;
+      opacity: 0;
+      visibility: hidden;
+    }
 
     @include breakpoint('xl'){
       padding-right: 30px;
@@ -136,4 +223,59 @@
       max-width: 230px;
     }
   }
+
+  &__burger{
+    display: none;
+
+    @include breakpoint('lg') {
+      display: block;
+      position: absolute;
+      top: 34%;
+      right: 20px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      z-index: 6;
+    }
+
+    &::before {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      transition: all ease-in-out 0.3s;
+    }
+
+    &::after {
+      content: '';
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      transition: all ease-in-out 0.3s;
+    }
+
+    span {
+      width: 30px;
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: black;
+      transition: all ease-in-out 0.3s;
+    }
+  }
 }
+

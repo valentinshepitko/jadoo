@@ -8,12 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&family=Volkhov:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style/css/main.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
     <script src="src/js/main.js"></script>
 </head>
 <body>
 <header class="header">
-    <div class="header-container">
-        <div class="header__holder">
+    <div class="header-container flex-container">
             <div class="header__logo-holder">
                 <a href="#" class="header__link">
                     <img src="src/img/logo.svg" alt="" class="header__logo">
@@ -28,36 +31,38 @@
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Bookings</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="header__login-holder">
-               <ul class="header__login-list">
-                   <li class="header__login-item">
-                       <a href="#" class="header__login">Login</a>
-                   </li>
-                   <li class="header__login-item"><div class="header__sign-up-holder"><a href="#" class="header__sign-up">Sign Up</a></div>
-                       </li>
-                   <li class="header__login-item">
-                       <div class="header__lang-holder">
-                           <a href="#" class="header__lang">EN</a>
-                       </div>
-<!--                       <ul class="header__lang-list">-->
-<!--                           <li class="header__lang-item">-->
-<!--                               <a href="#" class="header__lang-link">UA</a>-->
-<!--                           </li>-->
+                <div class="header__login-holder">
+                    <ul class="header__login-list">
+                        <li class="header__login-item">
+                            <a href="#" class="header__login">Login</a>
+                        </li>
+                        <li class="header__login-item"><div class="header__sign-up-holder"><a href="#" class="header__sign-up">Sign Up</a></div>
+                        </li>
+                        <li class="header__login-item">
+                            <div class="header__lang-holder">
+                                <a href="#" class="header__lang">EN</a>
+                            </div>
+                            <!--                       <ul class="header__lang-list">-->
+                            <!--                           <li class="header__lang-item">-->
+                            <!--                               <a href="#" class="header__lang-link">UA</a>-->
+                            <!--                           </li>-->
 
-<!--                           <li class="header__lang-item">-->
-<!--                               <a href="#" class="header__lang-link">FR</a>-->
-<!--                           </li>-->
+                            <!--                           <li class="header__lang-item">-->
+                            <!--                               <a href="#" class="header__lang-link">FR</a>-->
+                            <!--                           </li>-->
 
-<!--                           <li class="header__lang-item">-->
-<!--                               <a href="#" class="header__lang-link">IT</a>-->
-<!--                           </li>-->
-<!--                       </ul>-->
-                   </li>
-               </ul>
+                            <!--                           <li class="header__lang-item">-->
+                            <!--                               <a href="#" class="header__lang-link">IT</a>-->
+                            <!--                           </li>-->
+                            <!--                       </ul>-->
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-            <img src="src/img/decore.png" alt="" class="header__decor">
+        <button class="header__burger">
+            <span></span>
+        </button>
+        <img src="src/img/decore.png" alt="" class="header__decor">
     </div>
 </header>
 <main class="main">
@@ -73,7 +78,7 @@
                    <div class="hero__find-more-holder">
                        <a href="#" class="hero__find-more">Find out more</a>
                    </div>
-                   <div class="header__play-holder">
+                   <div class="hero__play-holder">
                        <a href="#" class="header__play">
                            <img src="src/img/play.svg" alt="" class="">
                        </a>

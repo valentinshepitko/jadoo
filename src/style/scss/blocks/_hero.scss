@@ -30,6 +30,10 @@
     @include breakpoint('xs'){
       font-size: 16px;
     }
+
+    @include breakpoint('lg'){
+      text-align: center;
+    }
   }
 
   &__title{
@@ -47,6 +51,10 @@
       font-size: 54px;
       line-height: 69px;
     }
+
+    @include breakpoint('lg'){
+      margin: 0 auto;
+    }
   }
 
   &__text{
@@ -60,6 +68,10 @@
     @include breakpoint('xs'){
       padding-bottom: 30px;
     }
+
+    @include breakpoint('lg'){
+      margin: 0 auto;
+    }
   }
 
   &__button-holder{
@@ -71,6 +83,14 @@
     @include breakpoint('xs'){
       justify-content: center;
       gap: 35px;
+    }
+
+    @include breakpoint('md'){
+      justify-content: center;
+    }
+
+    @include breakpoint('lg'){
+      justify-content: center;
     }
   }
 
